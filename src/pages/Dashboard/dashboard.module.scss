@@ -1,0 +1,57 @@
+@import '../../styles/mixins';
+
+header {
+	@include robotHeader;
+}
+.overlay {
+	@include overlay;
+}
+#text {
+	z-index: 2;
+	text-shadow: 3px 3px 5px var(--red-color);
+}
+.container {
+	display: flex;
+}
+.main_grid {
+	display: grid;
+	grid-template-areas:
+		'roles'
+		'depts';
+	grid-gap: 4rem;
+	padding: 1rem;
+	@media (min-width: 600px) {
+		grid-template-areas: 'roles depts';
+	}
+}
+.info_container {
+	> h3 {
+		border-bottom: 3px solid var(--red-color);
+		margin-bottom: 2rem;
+	}
+	> div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		> button:not(:last-child) {
+			margin-bottom: 1.25rem;
+		}
+	}
+	padding: 1rem;
+	border-radius: 5px;
+	max-height: 300px;
+	overflow-y: scroll;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#board_btn {
+	border: none;
+	border-radius: 5px;
+	padding: 2rem;
+	width: 100%;
+}
+#roles {
+	grid-area: roles;
+}
+#depts {
+	grid-area: depts;
+}

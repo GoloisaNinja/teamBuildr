@@ -1,0 +1,26 @@
+@import '../../styles/mixins';
+
+header {
+	@include robotHeader;
+}
+.overlay {
+	@include overlay;
+}
+.hero_grid {
+	display: grid;
+	align-items: center;
+	justify-content: space-around;
+	grid-template-areas:
+		'text img'
+		'subtext subtext';
+}
+#text {
+	grid-area: text;
+	z-index: 2;
+	text-shadow: 3px 3px 5px var(--red-color);
+}
+#subtext {
+	margin-top: 3rem;
+	grid-area: subtext;
+	z-index: 2;
+}

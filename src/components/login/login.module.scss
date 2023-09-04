@@ -1,0 +1,8 @@
+@import '../../styles/mixins';
+
+form {
+	@include basicForm;
+}
+.btnlink {
+	@include btnlink;
+}

@@ -1,0 +1,33 @@
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.spinner {
+	display: block;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -55px;
+	margin-left: -25px;
+	width: 60px;
+	height: 60px;
+	border: 7px solid rgba(255, 255, 255, 0.8);
+	border-radius: 50%;
+	border-top-color: var(--red-color);
+	z-index: 1010;
+	animation: spin 1.5s ease-in-out infinite;
+}
+
+.overlay {
+	display: block;
+	z-index: 1009;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #cccccc;
+	opacity: 1;
+	margin-top: -5rem;
+}

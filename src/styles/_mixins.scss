@@ -1,0 +1,50 @@
+@mixin basicForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 500px;
+	padding: 1.8rem;
+	border-radius: 5px;
+	margin-top: 1rem;
+	background-color: #cccccc;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	> label {
+		font-size: 1.8rem;
+		margin-bottom: 0.5rem;
+	}
+	> input {
+		font-size: 1.6rem;
+		margin-bottom: 1rem;
+		padding: 1rem;
+		border: none;
+		border-radius: 5px;
+		background-color: rgb(77, 75, 75);
+		color: white;
+	}
+}
+@mixin btnlink {
+	background: none;
+	border: none;
+	color: var(--red-color);
+	font-size: 1.6rem;
+}
+
+@mixin overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: black;
+	opacity: 0.5;
+	z-index: 1;
+}
+@mixin robotHeader {
+	position: relative;
+	background-color: black;
+	padding: 4rem 2rem;
+	background-image: url('../../src/assets/bot.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right;
+}

@@ -1,0 +1,318 @@
+/* -------Basic Reset------- */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+}
+/* ----------------------- */
+
+/* ---Root color vars----- */
+
+:root {
+	--yellow-color: #ff9e03;
+	--blue-color: #031cff;
+	--green-color: #72fa02;
+	--red-color: #fa026e;
+	--red-color-hover: #d9005e;
+	--grey-color: #cccccc;
+	--dark-grey-color: rgb(77, 75, 75);
+}
+
+/* ----------------------- */
+
+body {
+	background-color: white;
+	font-family: 'Archivo', sans-serif;
+}
+
+/* ----Standard Sizing---- */
+
+h1 {
+	font-size: 50px;
+}
+h2 {
+	font-size: 40px;
+}
+h3 {
+	font-size: 35px;
+}
+h4 {
+	font-size: 30px;
+}
+h5 {
+	font-size: 25px;
+}
+
+.fsxs {
+	font-size: 1.2rem;
+}
+.fss {
+	font-size: 1.6rem;
+}
+.fsm {
+	font-size: 2rem;
+}
+.fsl {
+	font-size: 2.6rem;
+}
+.fsxl {
+	font-size: 3.5rem;
+}
+.fshero {
+	font-size: 10rem;
+	@media (min-width: 1000px) {
+		font-size: 12.5rem;
+	}
+}
+.fsherosm {
+	font-size: 5rem;
+}
+/* ----------------------- */
+
+/* -----Basic styles------ */
+
+/* Colors */
+
+.white {
+	color: white;
+}
+.red {
+	color: var(--red-color);
+}
+.green {
+	color: var(--green-color);
+}
+.yellow {
+	color: var(--yellow-color);
+}
+.blue {
+	color: var(--blue-color);
+}
+
+/* Background colors */
+.bgYellow {
+	background-color: var(--yellow-color);
+}
+.bgBlue {
+	background-color: var(--blue-color);
+}
+.bgRed {
+	background-color: var(--red-color);
+}
+.bgGreen {
+	background-color: var(--green-color);
+}
+.bgGrey {
+	background-color: var(--grey-color);
+}
+.bgDarkGrey {
+	background-color: var(--dark-grey-color);
+}
+
+/* Font Styles */
+
+.b {
+	font-weight: bold;
+}
+.i {
+	font-style: italic;
+}
+.u {
+	text-decoration: underline;
+}
+.fw200 {
+	font-weight: 200;
+}
+.fw400 {
+	font-weight: 400;
+}
+.fw600 {
+	font-weight: 600;
+}
+.fw800 {
+	font-weight: 800;
+}
+.fw900 {
+	font-weight: 900;
+}
+
+/* ------Padding------ */
+
+.pdxsm {
+	padding: 1rem;
+}
+.pdsm {
+	padding: 1.6rem;
+}
+.pdm {
+	padding: 2rem;
+}
+.pdl {
+	padding: 2.6rem;
+}
+.pdxl {
+	padding: 3rem;
+}
+.pdleftxsm {
+	padding-left: 1rem;
+}
+.pdleftsm {
+	padding-left: 1.6rem;
+}
+.pdleftm {
+	padding-left: 2rem;
+}
+.pdleftl {
+	padding-left: 2.6rem;
+}
+.pdleftxl {
+	padding-left: 3rem;
+}
+.pdrightxsm {
+	padding-right: 1rem;
+}
+.pdrightsm {
+	padding-right: 1.6rem;
+}
+.pdrightm {
+	padding-right: 2rem;
+}
+.pdrightl {
+	padding-right: 2.6rem;
+}
+.pdrightxl {
+	padding-right: 3rem;
+}
+.pdtopxsm {
+	padding-top: 1rem;
+}
+.pdtopsm {
+	padding-top: 1.6rem;
+}
+.pdtopm {
+	padding-top: 2rem;
+}
+.pdtopl {
+	padding-top: 2.6rem;
+}
+.pdtopxl {
+	padding-top: 3rem;
+}
+.pdbottomxsm {
+	padding-bottom: 1rem;
+}
+.pdbottomsm {
+	padding-bottom: 1.6rem;
+}
+.pdbottomm {
+	padding-bottom: 2rem;
+}
+.pdbottoml {
+	padding-bottom: 2.6rem;
+}
+.pdbottomxl {
+	padding-bottom: 3rem;
+}
+
+/* ------Margins--------- */
+.mgxsm {
+	margin: 1rem;
+}
+.mgsm {
+	margin: 1.6rem;
+}
+.mgm {
+	margin: 2rem;
+}
+.mgl {
+	margin: 2.6rem;
+}
+.mgxl {
+	margin: 3rem;
+}
+.mgleftxsm {
+	margin-left: 1rem;
+}
+.mgleftsm {
+	margin-left: 1.6rem;
+}
+.mgleftm {
+	margin-left: 2rem;
+}
+.mgleftl {
+	margin-left: 2.6rem;
+}
+.mgleftxl {
+	margin-left: 3rem;
+}
+.mgrightxsm {
+	margin-right: 1rem;
+}
+.mgrightsm {
+	margin-right: 1.6rem;
+}
+.mgrightm {
+	margin-right: 2rem;
+}
+.mgrightl {
+	margin-right: 2.6rem;
+}
+.mgrightxl {
+	margin-right: 3rem;
+}
+.mgtopxsm {
+	margin-top: 1rem;
+}
+.mgtopsm {
+	margin-top: 1.6rem;
+}
+.mgtopm {
+	margin-top: 2rem;
+}
+.mgtopl {
+	margin-top: 2.6rem;
+}
+.mgtopxl {
+	margin-top: 3rem;
+}
+.mgbottomxsm {
+	margin-bottom: 1rem;
+}
+.mgbottomsm {
+	margin-bottom: 1.6rem;
+}
+.mgbottomm {
+	margin-bottom: 2rem;
+}
+.mgbottoml {
+	margin-bottom: 2.6rem;
+}
+.mgbottomxl {
+	margin-bottom: 3rem;
+}
+
+/* ----------------------- */
+
+/* ------- Buttons ------- */
+button {
+	border: none;
+	border-radius: 5px;
+	font-size: 1.8rem;
+	font-weight: 600;
+	cursor: pointer;
+	font-family: 'Archivo', sans-serif;
+}
+.btnbasic {
+	background-color: var(--red-color);
+	padding: 2rem 1rem;
+	margin-top: 1rem;
+	color: white;
+	&:hover {
+		transition: 0.4s ease-in-out;
+		background-color: var(--red-color-hover);
+	}
+}
